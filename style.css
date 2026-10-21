@@ -4,6 +4,110 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* Styling Pricelist Neli Make Up */
+.pricelist-section {
+  padding: 60px 20px;
+  background-color: #fff0f3;
+  text-align: center;
+}
+
+.pricelist-section .section-title {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.pricelist-section .section-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+.price-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background: #ffffff;
+  border: 1px solid #f8c8d8;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(214, 51, 132, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-card.featured {
+  border: 2px solid #d63384;
+  box-shadow: 0 8px 25px rgba(214, 51, 132, 0.2);
+}
+
+.price-card .badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d63384;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.price-card h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.price-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.price-card .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.price-card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border-top: 1px dashed #f8c8d8;
+  padding-top: 15px;
+}
+
+.price-card .features li {
+  padding: 6px 0;
+  color: #444;
+  font-size: 0.85rem;
+}
+
+.price-card .features li::before {
+  content: "♥ ";
+  color: #d63384;
+  font-weight: bold;
+}
 
 body {
     background-color: #fff0f5;
